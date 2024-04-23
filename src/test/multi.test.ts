@@ -1,4 +1,4 @@
-import { n, number } from "../multi";
+import { n, number, notFalse, notTrue } from "../multi";
 
 describe("Multi test", () => {
   test("n should be null", () => {
@@ -12,5 +12,11 @@ describe("Multi test", () => {
   test("number should be 0", () => {
     expect(number).toBe(0);
   });
+  test("notTrue should be false", () => {
+    expect(notTrue).toBe(false);
+  });
 
+  test("notFalse should be true", () => {
+    expect(notFalse).toBe(true);
+  });
 });
