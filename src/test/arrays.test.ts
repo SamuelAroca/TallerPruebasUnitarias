@@ -12,4 +12,10 @@ describe('Array test', () => {
     const value = 'value3';
     expect(arrayContainsValue(arr, value)).toBe(true);
   });
+
+  test('Deberia devolver true si el array contiiene el valor: value3', () => {
+    const arr = ['value1', 'value2', 'value3', 'value4', 'value5'];
+    const value = 'UNAC';
+    expect(arrayNotContainsValue(arr, value)).toBe(true);
+  });
 });
